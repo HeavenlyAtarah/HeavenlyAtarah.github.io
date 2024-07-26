@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///Users/abigailmathabathamolepo/Documents/HeavenlyAtarah.html#home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeavenlyAtarah.co</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+            background: url('/mnt/data/download-7.png') no-repeat center center fixed; 
+            background-size: cover;
+            color: white; / /*for background readability*/
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: rgba(52, 58, 64, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* To improve readability */
+        }
+        section {
+            margin-bottom: 20px;
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 1.5%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            border-radius: 10px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            header, nav, footer {
+                text-align: center;
+            }
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HeavenlyAtarah.co</h1>
+        <p>Your one-stop shop for all heavenly goods!</p>
+    </header>
+    <nav>
+        <a href="file:///Users/abigailmathabathamolepo/Documents/HeavenlyAtarah.html#home" onclick="showSection(&#39;home&#39;)">Home</a>
+        <a href="file:///Users/abigailmathabathamolepo/Documents/HeavenlyAtarah.html#products" onclick="showSection(&#39;products&#39;)">Products</a>
+        <a href="file:///Users/abigailmathabathamolepo/Documents/HeavenlyAtarah.html#about" onclick="showSection(&#39;about&#39;)">About Us</a>
+        <a href="file:///Users/abigailmathabathamolepo/Documents/HeavenlyAtarah.html#contact" onclick="showSection(&#39;contact&#39;)">Contact</a>
+    </nav>
+    <main>
+        <section id="home" class="active">
+            <div class="hero">
+                <h2>Welcome to HeavenlyAtarah.co</h2>
+                <p>Experience the divine with our exclusive range of quality human hair and hair accessories, fit just to be your next crown.</p>
+                <a href="file:///Users/abigailmathabathamolepo/Documents/HeavenlyAtarah.html#products" class="cta-button" onclick="showSection(&#39;products&#39;)">Shop Now</a>
+            </div>
+        </section>
+        <section id="products" class="">
+            <h2>Our Products</h2>
+            <p>Explore our wide range of heavenly products and accessories.</p>
+            <div class="product">
+                <img src="./HeavenlyAtarah.co_files/76e61699-7419-447d-9740-0f98ec052895.JPG" alt="Product 1">
+                <h3>Lipstick Hamper</h3>
+                <p>Lipgloss, Scrunchy, Lipstick</p>
+                <p>R50</p>
+            </div>
+            <div class="product">
+                <img src="./HeavenlyAtarah.co_files/Scrunchies.jpg" alt="Product 2">
+                <h3>Scrunchy</h3>
+                <p>R30</p>
+            </div>
+            <div class="product">
+                <img src="./HeavenlyAtarah.co_files/Lipgloss.jpg" alt="Product 3">
+                <h3>Lipgloss 3</h3>
+                <p>R20</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our mission, vision, and values.</p>
+            <!-- Add about us content here -->
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please reach out to us using the following contact details:</p>
+            <ul>
+                <li>Email: <a href="mailto:HeavenlyAtarah.co@gmail.com">HeavenlyAtarah.co@gmail.com</a></li>
+                <li>Contact Number: <a href="tel:+27649070300">064 907 0300</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 HeavenlyAtarah.co. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+
+</body></html>
